@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "comment": "Deploy Next.js frontend from /frontend. For FastAPI, deploy separately to Railway/Render and set NEXT_PUBLIC_API_URL.",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/.next",
+  "framework": "nextjs",
+  "installCommand": "cd frontend && npm install",
+  "devCommand": "cd frontend && npm run dev",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@bookme_api_url"
+  }
+}

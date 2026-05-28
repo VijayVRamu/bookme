@@ -45,7 +45,7 @@ class BookingResponse(BaseModel):
     start_time: datetime
     end_time: datetime
     timezone: str
-    meet_link: str | None
+    meet_link: str 
     status: str
 
 
